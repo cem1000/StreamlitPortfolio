@@ -40,7 +40,7 @@ with col4:
 
 # About Me section
 st.header('About Me')
-st.write('I like building streamlit apps :) Please reach out to me visit my '[Linkedin](https://www.linkedin.com/in/cemyilmaz94/)' to reach out to me.
+st.markdown('I like building streamlit apps :) Please reach out to me visit my [LinkedIn](https://www.linkedin.com/in/cemyilmaz94/) to reach out to me.')
 
 # Contact section (optional)
 # st.header('Contact')
