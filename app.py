@@ -1,8 +1,10 @@
 import streamlit as st
 
-st.title('My Streamlit Portfolio')
 
-st.set_page_config(layout="wide")
+# This should be the first Streamlit function called
+st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
+
+st.title('My Streamlit Portfolio')
 
 # Create rows of columns for the apps
 col1, col2, col3 = st.columns(3)
