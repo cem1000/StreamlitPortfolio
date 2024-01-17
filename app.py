@@ -1,11 +1,13 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 
 st.title('My Streamlit Portfolio')
 
-st.set_page_config(layout="wide")
 
 # Create rows of columns for the apps
 col1, col2, col3 = st.columns(3)
+
+
 
 # App 1 - SQL Code Where Items App
 with col1:
