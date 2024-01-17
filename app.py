@@ -1,13 +1,11 @@
 import streamlit as st
-st.set_page_config(layout="wide")
 
 st.title('My Streamlit Portfolio')
 
+st.set_page_config(layout="wide")
 
 # Create rows of columns for the apps
 col1, col2, col3 = st.columns(3)
-
-
 
 # App 1 - SQL Code Where Items App
 with col1:
@@ -42,7 +40,7 @@ with col4:
 
 # About Me section
 st.header('About Me')
-st.write('I like building streamlit apps :)')
+st.write('I like building streamlit apps :) Please reach out to me visit my '[Linkedin](https://www.linkedin.com/in/cemyilmaz94/)' to reach out to me. ')
 
 # Contact section (optional)
 # st.header('Contact')
