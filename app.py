@@ -34,7 +34,7 @@ with col4:
     st.subheader('Clipnote')
     st.write('An app for summarizing YouTube videos. It allows users to understand the content of long videos quickly by providing concise summaries.')
     st.markdown('[Go to app](https://clipnote.streamlit.app/)')
-    st.markdown('[Github URL](https://github.com/cem1000/yt_summarizer)')
+    # st.markdown('[Github URL](https://github.com/cem1000/yt_summarizer)')
 
 # About Me section
 st.header('About Me')
