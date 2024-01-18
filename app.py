@@ -14,6 +14,8 @@ custom_css = """
 </style>
 """
 
+
+
 # Inject custom CSS with Markdown
 st.markdown(custom_css, unsafe_allow_html=True)
 
@@ -23,6 +25,7 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
+st.sidebar.title('Navigation')
 
 st.title('My Streamlit Portfolio')
 
