@@ -6,6 +6,20 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
+# Custom CSS to inject into the Streamlit app
+custom_css = """
+<style>
+    /* Apply styles to the main app container */
+    .css-18e3th9 {
+        border: 2px solid #90ee90; /* Light green color */
+        border-radius: 5px; /* Optional: if you want rounded corners */
+    }
+</style>
+"""
+
+# Inject custom CSS with Markdown
+st.markdown(custom_css, unsafe_allow_html=True)
+
 
 # This should be the first Streamlit function called
 st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
