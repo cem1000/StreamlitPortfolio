@@ -32,7 +32,7 @@ st.title('My Streamlit Portfolio')
 
 # Sidebar navigation
 st.sidebar.title('Navigation')
-page = st.sidebar.radio('Select a page:', ['Gallery', 'About Me / Contact Me'])
+st.sidebar.radio('Select a page:', ['Gallery', 'About Me / Contact Me'])
 
 
 # Create rows of columns for the apps
