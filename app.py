@@ -18,7 +18,10 @@ col1, col2, col3 = st.columns(3)
 # App 1 - SQL Code Where Items App
 with col1:
     st.subheader('SQL Code Where Items App')
-    st.image(sql_app_image , caption='SQL Where Clause Formatter App', use_column_width=True)
+    # st.image(sql_app_image , caption='SQL Where Clause Formatter App', use_column_width=True)
+
+    st.markdown(f'<img src="{sql_app_image}" alt="Image" style="width:100%;">', unsafe_allow_html=True)
+
     st.write('Streamlines SQL query building with efficient multi-value integration for where clause. If you are in a hurry and no time to format that long list of values in excel, dump them in here!')
     st.markdown('[Go to app](https://cem1000-sql-code-where-items-app-u1x6zr.streamlit.app/)')
     st.markdown('[Github URL](https://github.com/cem1000/sql_code_where_items)')
