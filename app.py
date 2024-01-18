@@ -68,18 +68,13 @@ st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
 st.sidebar.title('Navigation')
 page = st.sidebar.radio('Select a page:', ['Gallery', 'About Me / Contact Me'])
 
+
 # Custom CSS to inject into the Streamlit app
 custom_css = """
 <style>
-    /* Main app container */
-    .main {
-        border: 2px solid #90ee90; /* Light green color */
-        border-radius: 5px; /* Rounded corners */
-    }
-    /* Streamlit's internal divs for layout */
-    .css-1e5imcs {
-        border: 2px solid #90ee90; /* Light green color */
-        border-radius: 5px; /* Rounded corners */
+    .css-18e3th9 {
+        border: 10px solid #005fcc; /* Light green color */
+        border-radius: 12px;
     }
 </style>
 """
