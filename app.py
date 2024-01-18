@@ -57,7 +57,7 @@ def about_me_page():
     st.title('About Me / Contact Me')
     # About Me section
     st.header('About Me')
-    st.markdown('I am a data analyst and I enjoy building streamlit apps :) Please reach out to via [LinkedIn](https://www.linkedin.com/in/cemyilmaz94/).')
+    st.markdown('Hey, my name is Cem and I am a data analyst. I enjoy building streamlit apps :) Please reach out to via [LinkedIn](https://www.linkedin.com/in/cemyilmaz94/).')
     
 
 
