@@ -66,7 +66,7 @@ st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
 
 # Sidebar navigation
 st.sidebar.title('Navigation')
-page = st.sidebar.radio('Select a page:', ['Streamlit Portfolio Gallery', 'About Me / Contact Me'])
+page = st.sidebar.radio('Select a page:', ['Portfolio', 'About Me / Contact Me'])
 
 
 # Custom CSS to inject into the Streamlit app
@@ -83,7 +83,7 @@ custom_css = """
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # Page routing
-if page == 'Streamlit Portfolio Gallery':
+if page == 'Portfolio':
     gallery_page()
 elif page == 'About Me / Contact Me':
     about_me_page()
