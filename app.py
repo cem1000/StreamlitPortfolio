@@ -29,7 +29,7 @@ def gallery_page():
     with col2:
         st.subheader('Hotel Discovery Ireland')
         st.image(hotel_app_image, caption='SQL Where Clause Formatter App', use_column_width=True)
-        st.write('Utilizes haversine formula and Folium maps for exploring nearby hotels. Demonstrates folium map package usage and creation of programming requiring functions in backend connected to a dashboard.')
+        st.write('Demonstrates folium map package usage and utilisation of latitude and longitude distance calculations. Grabs hotel information from https://app.hotelbeds.com/.')
         st.markdown('[Go to app](https://hoteldiscoveryireland.streamlit.app/)')
         st.markdown('[Github URL](https://github.com/cem1000/HotelDiscovery)')
     
