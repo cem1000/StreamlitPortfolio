@@ -7,7 +7,6 @@ st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
 # Custom CSS to inject into the Streamlit app
 custom_css = """
 <style>
-    /* Apply styles to the main app container */
     .css-18e3th9 {
         border: 10px solid #5b8a42; /* Light green color */
         border-radius: 12px;
