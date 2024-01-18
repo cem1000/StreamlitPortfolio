@@ -10,7 +10,7 @@ sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/ma
 
 
 def gallery_page():
-    st.title('Gallery')
+    st.title('Gallery of Streamlit Apps I have built')
 
     # Create rows of columns for the apps
     col1, col2, col3 = st.columns(3)
