@@ -1,5 +1,8 @@
 import streamlit as st
 
+# This should be the first Streamlit function called
+st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
+
 
 # Custom CSS to inject into the Streamlit app
 custom_css = """
@@ -21,9 +24,6 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
-
-# This should be the first Streamlit function called
-st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
 
 st.title('My Streamlit Portfolio')
 
