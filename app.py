@@ -25,9 +25,15 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
-st.sidebar.title('Navigation')
+
 
 st.title('My Streamlit Portfolio')
+
+
+# Sidebar navigation
+st.sidebar.title('Navigation')
+page = st.sidebar.radio('Select a page:', ['Gallery', 'About Me / Contact Me'])
+
 
 # Create rows of columns for the apps
 col1, col2, col3 = st.columns(3)
