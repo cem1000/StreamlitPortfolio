@@ -3,21 +3,13 @@ import streamlit as st
 # This should be the first Streamlit function called
 st.set_page_config(page_title='My Streamlit Portfolio', layout="wide")
 
-# Sidebar navigation
-st.sidebar.title('Navigation')
-page = st.sidebar.radio('Select a page:', ['Gallery', 'About Me / Contact Me'])
 
 # Custom CSS to inject into the Streamlit app
 custom_css = """
 <style>
-    /* Main app container */
-    .main {
-        border: 15px solid #90ee90; 
-        border-radius: 12px; 
-    }
-    .css-1e5imcs {
-        border: 2px solid #90ee90; 
-        border-radius: 5px; 
+    .css-18e3th9 {
+        border: 10px solid #005fcc; /* Light green color */
+        border-radius: 12px;
     }
 </style>
 """
@@ -25,45 +17,55 @@ custom_css = """
 # Inject custom CSS with Markdown
 st.markdown(custom_css, unsafe_allow_html=True)
 
-# Gallery Page
-if page == 'Gallery':
-    st.title('Gallery')
+# Correct GitHub image links
+clipnote_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/clipnote_prev.jpg'
+dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/dublin_bike_prev.jpg'
+hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
+sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
-    # GitHub image links
-    clipnote_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/clipnote_prev.jpg'
-    dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/dublin_bike_prev.jpg'
-    hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
-    sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
-    # Create rows of columns for the apps
-    col1, col2, col3, col4 = st.columns(4)
+st.title('My Streamlit Portfolio')
 
-    with col1:
-        st.image(sql_app_image, caption='SQL Where Clause Formatter App', use_column_width=True)
-        st.markdown('[Go to app](https://cem1000-sql-code-where-items-app-u1x6zr.streamlit.app/)')
-        st.markdown('[Github URL](https://github.com/cem1000/sql_code_where_items)')
+# Create rows of columns for the apps
+col1, col2, col3 = st.columns(3)
 
-    with col2:
-        st.image(hotel_app_image, caption='Hotel Discovery Ireland', use_column_width=True)
-        st.markdown('[Go to app](https://hoteldiscoveryireland.streamlit.app/)')
-        st.markdown('[Github URL](https://github.com/cem1000/HotelDiscovery)')
+# App 1 - SQL Code Where Items App
 
-    with col3:
-        st.image(dublin_bike_image, caption='Dublin Bikes', use_column_width=True)
-        st.markdown('[Go to app](https://dublinbikes.streamlit.app/)')
-        st.markdown('[Github URL](https://github.com/cem1000/DublinBikeAvailability)')
+with col1:
+    st.subheader('SQL Code Where Items App')
+    st.image(sql_app_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+    st.write('Streamlines SQL query building with efficient multi-value integration for where clause. If you are in a hurry and no time to format that long list of values in excel, dump them in here!')
+    st.markdown('[Go to app](https://cem1000-sql-code-where-items-app-u1x6zr.streamlit.app/)')
+    st.markdown('[Github URL](https://github.com/cem1000/sql_code_where_items)')
 
-    with col4:
-        st.image(clipnote_image, caption='Clipnote', use_column_width=True)
-        st.markdown('[Go to app](https://clipnote.streamlit.app/)')
-        # st.markdown('[Github URL](https://github.com/cem1000/yt_summarizer)')
 
-# About Me / Contact Me Page
-elif page == 'About Me / Contact Me':
-    st.title('About Me / Contact Me')
-    st.markdown("""
-        I am a data analyst and I enjoy building streamlit apps. 
-        Please reach out to me via [LinkedIn](https://www.linkedin.com/in/cemyilmaz94/).
-        
-        <!-- Add more contact details or an about me description here -->
-    """)
+# App 2 - Hotel Discovery Ireland
+with col2:
+    st.subheader('Hotel Discovery Ireland')
+    st.image(hotel_app_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+    st.write('Utilizes haversine formula and Folium maps for exploring nearby hotels. Demonstrates folium map package usage and creation of programming requiring functions in backend connected to a dashboard.')
+    st.markdown('[Go to app](https://hoteldiscoveryireland.streamlit.app/)')
+    st.markdown('[Github URL](https://github.com/cem1000/HotelDiscovery)')
+
+# App 3 - Dublin Bikes
+with col3:
+    st.subheader('Dublin Bikes')
+    st.image(dublin_bike_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+    st.write('Enables Dublin bike users to efficiently plan their bike journey ahead of time using historical data. Data is derived from smart Dublin API providers.')
+    st.markdown('[Go to app](https://dublinbikes.streamlit.app/)')
+    st.markdown('[Github URL](https://github.com/cem1000/DublinBikeAvailability)')
+
+# Start a new row for the next set of apps
+col4, col5, col6 = st.columns(3)
+
+# App 4 - Clipnote
+with col4:
+    st.subheader('Clipnote')
+    st.image(clipnote_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+    st.write('An app for summarizing YouTube videos. It allows users to understand the content of long videos quickly by providing concise summaries.')
+    st.markdown('[Go to app](https://clipnote.streamlit.app/)')
+    # st.markdown('[Github URL](https://github.com/cem1000/yt_summarizer)')
+
+# About Me section
+st.header('About Me')
+st.markdown('I am a data analyst and I enjoy building streamlit apps :) Please reach out to via [LinkedIn](https://www.linkedin.com/in/cemyilmaz94/).')
