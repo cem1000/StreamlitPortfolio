@@ -3,7 +3,7 @@ import streamlit as st
 # Correct GitHub image links
 clipnote_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/clipnote_prev.jpg'
 dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/dublin_bike_prev.jpg'
-hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_prev.jpg'
+hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_proximity_app.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 
 
