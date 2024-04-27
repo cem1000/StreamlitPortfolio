@@ -5,6 +5,7 @@ clipnote_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/m
 dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/dublin_bike_prev.jpg'
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_proximity_app.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
+energy_tracker_image = 'https://github.com/cem1000/StreamlitPortfolio/blob/main/energytracker.jpg'
 
 
 
@@ -19,7 +20,7 @@ def gallery_page():
     
     with col1:
         st.subheader('Dublin Bikes')
-        st.image(dublin_bike_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+        st.image(dublin_bike_image, caption='Dublin Bike App!', use_column_width=True)
         st.write('Enables Dublin bike users to efficiently plan their bike journey ahead of time using historical data. Data is derived from smart Dublin API providers.')
         st.markdown('[Go to app](https://dublinbikes.streamlit.app/)')
         st.markdown('[Github URL](https://github.com/cem1000/DublinBikeAvailability)')
@@ -36,7 +37,7 @@ def gallery_page():
     # App 3
     with col3:
         st.subheader('Hotel Discovery Ireland')
-        st.image(hotel_app_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+        st.image(hotel_app_image, caption='Discover Nearby Hotels!', use_column_width=True)
         st.write('Demonstrates folium map package usage and utilisation of latitude and longitude distance calculations. Grabs hotel information from https://app.hotelbeds.com/.')
         st.markdown('[Go to app](https://hoteldiscoveryireland.streamlit.app/)')
         st.markdown('[Github URL](https://github.com/cem1000/HotelDiscovery)')
@@ -47,10 +48,18 @@ def gallery_page():
     # App 4 
     with col4:
         st.subheader('Clipnote')
-        st.image(clipnote_image, caption='SQL Where Clause Formatter App', use_column_width=True)
+        st.image(clipnote_image, caption='Summarize YouTube videos.', use_column_width=True)
         st.write('An app for summarizing YouTube videos. It allows users to understand the content of long videos quickly by providing concise summaries.')
         st.markdown('[Go to app](https://clipnote.streamlit.app/)')
         # st.markdown('[Github URL](https://github.com/cem1000/yt_summarizer)')
+
+    # App 5 
+    with col5:
+        st.subheader('Energy Tracker Dashboard')
+        st.image(energy_tracker_image, caption='Energy BI Tool', use_column_width=True)
+        st.write('Dashboard for tracking energy usage across different verticals.')
+        st.markdown('[Go to app](https://clipnote.streamlit.app/)')
+        # st.markdown('[Github URL](https://github.com/cem1000/EnergyApp)')
 
 
 def about_me_page():
