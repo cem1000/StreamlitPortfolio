@@ -67,7 +67,7 @@ def gallery_page():
         st.image(yt_image_image, caption='Summarise YouTube Videos', use_column_width=True)
         st.write('App to summarize youtube videos. Enter OpenAPI key and URL and that's it!')
         st.markdown('[Go to app](https://youtubesummarizerappapp-tqxqusknrlvqifjkthj5g2.streamlit.app/)')
-        # st.markdown('[Github URL](https://github.com/cem1000/StreamlitPortfolio)')
+
 
 def about_me_page():
     st.title('About Me / Contact Me')
