@@ -6,6 +6,7 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_proximity_app.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 energy_tracker_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/energytracker.jpg'
+yt_image_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/yt_image.jpg'
 
 
 
@@ -58,9 +59,15 @@ def gallery_page():
         st.subheader('Energy Tracker Dashboard')
         st.image(energy_tracker_image, caption='Energy BI Tool', use_column_width=True)
         st.write('Dashboard for tracking energy usage across different verticals.')
-        st.markdown('[Go to app](https://energyapp-euhwtnprjqtyovj5zahtdu.streamlit.app//)')
+        st.markdown('[Go to app](https://energyapp-euhwtnprjqtyovj5zahtdu.streamlit.app/)')
         # st.markdown('[Github URL](https://github.com/cem1000/EnergyApp)')
 
+    with col6:
+        st.subheader('Youtube Summarzier')
+        st.image(yt_image_image, caption='Summarise YouTube Videos', use_column_width=True)
+        st.write('App to summarize youtube videos. Enter OpenAPI key and URL and that's it!.')
+        st.markdown('[Go to app](https://youtubesummarizerappapp-tqxqusknrlvqifjkthj5g2.streamlit.app/)')
+        # st.markdown('[Github URL](https://github.com/cem1000/StreamlitPortfolio)')
 
 def about_me_page():
     st.title('About Me / Contact Me')
