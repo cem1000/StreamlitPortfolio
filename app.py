@@ -5,7 +5,7 @@ clipnote_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/m
 dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/dublin_bike_prev.jpg'
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_proximity_app.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
-energy_tracker_image = 'https://github.com/cem1000/StreamlitPortfolio/blob/main/energytracker.jpg'
+energy_tracker_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/energytracker.jpg'
 
 
 
@@ -58,7 +58,7 @@ def gallery_page():
         st.subheader('Energy Tracker Dashboard')
         st.image(energy_tracker_image, caption='Energy BI Tool', use_column_width=True)
         st.write('Dashboard for tracking energy usage across different verticals.')
-        st.markdown('[Go to app](https://clipnote.streamlit.app/)')
+        st.markdown('[Go to app](https://energyapp-euhwtnprjqtyovj5zahtdu.streamlit.app//)')
         # st.markdown('[Github URL](https://github.com/cem1000/EnergyApp)')
 
 
