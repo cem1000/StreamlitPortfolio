@@ -64,7 +64,7 @@ def gallery_page():
 
     with col6:
         st.subheader('YouTube Summarizer')
-        st.image(yt_image_image, caption='Summarize YouTube Videos', use_column_width=True)
+        st.image(yt_image, caption='Summarize YouTube Videos', use_column_width=True)
         st.write('App to summarize YouTube videos. Enter OpenAI API key and URL and that\'s it!')
         st.markdown('[Go to app](https://youtubesummarizerappapp-tqxqusknrlvqifjkthj5g2.streamlit.app/)')
 
