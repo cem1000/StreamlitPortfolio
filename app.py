@@ -6,7 +6,7 @@ dublin_bike_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfoli
 hotel_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/hotel_proximity_app.jpg'
 sql_app_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/sql_where_clause_prev.jpg'
 energy_tracker_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/energytracker.jpg'
-yt_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/yt_image.jpg'
+yt_image = 'https://raw.githubusercontent.com/cem1000/StreamlitPortfolio/main/yt_sum.jpg'
 
 
 
